@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - Manage Tasks Easily</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Task<span>Flow</span></a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <nav id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Manage your team's tasks in one simple place</h1>
+        <p>TaskFlow helps teams plan, track and finish work faster. No confusion, no missed deadlines.</p>
+        <a href="#contact" class="btn">Request a Demo</a>
+        <a href="#features" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="hero-visual">
+        <div class="mock-card">
+          <h3>Today's Tasks</h3>
+          <p>✅ Design homepage</p>
+          <p>✅ Team meeting</p>
+          <p>⏳ Fix login bug</p>
+          <p>⏳ Send invoice</p>
+          <div class="progress"><div></div></div>
+          <small>50% completed</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="grid">
+        <div class="card"><div class="icon">📋</div><h3>Task Boards</h3><p>Organize work in simple drag-and-drop style boards.</p></div>
+        <div class="card"><div class="icon">⏰</div><h3>Reminders</h3><p>Get alerts before deadlines so nothing is missed.</p></div>
+        <div class="card"><div class="icon">👥</div><h3>Team Collaboration</h3><p>Assign tasks, comment and work together easily.</p></div>
+        <div class="card"><div class="icon">📊</div><h3>Reports</h3><p>See progress with clear charts and summaries.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section light">
+    <div class="container">
+      <h2>How it works</h2>
+      <div class="grid">
+        <div class="card"><div class="icon">1️⃣</div><h3>Sign up</h3><p>Create your free account in under a minute.</p></div>
+        <div class="card"><div class="icon">2️⃣</div><h3>Add tasks</h3><p>Create projects and add your team's tasks.</p></div>
+        <div class="card"><div class="icon">3️⃣</div><h3>Track progress</h3><p>Watch tasks move to done and hit your goals.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2>Pricing</h2>
+      <div class="grid pricing">
+        <div class="card">
+          <h3>Free</h3>
+          <p class="price">₹0<small>/month</small></p>
+          <ul><li>Up to 3 projects</li><li>Basic reports</li><li>Email support</li></ul>
+          <a href="#contact" class="btn">Get Started</a>
+        </div>
+        <div class="card popular">
+          <h3>Pro</h3>
+          <p class="price">₹499<small>/month</small></p>
+          <ul><li>Unlimited projects</li><li>Advanced reports</li><li>Priority support</li></ul>
+          <a href="#contact" class="btn">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section light">
+    <div class="container">
+      <h2>Request a Demo</h2>
+      <form id="demoForm" novalidate>
+        <input type="text" id="name" placeholder="Your Name">
+        <span class="error" id="nameError"></span>
+
+        <input type="email" id="email" placeholder="Your Email">
+        <span class="error" id="emailError"></span>
+
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button type="submit" class="btn">Send Request</button>
+        <p class="success" id="success"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📧 hello@taskflow.com | 📞 +91 98765 43210</p>
+    <p>© 2026 TaskFlow. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
